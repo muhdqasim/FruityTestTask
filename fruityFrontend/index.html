@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Vuetify 3</title>
+    <style>
+        @font-face {
+            font-family: Kalam-B;
+            src: url(public/fonts/Kalam/Kalam-Bold.ttf);
+        }
+        @font-face {
+            font-family: Kalam-R;
+            src: url(public/fonts/Kalam/Kalam-Bold.ttf);
+        }
+        @font-face {
+            font-family: Kalam-L;
+            src: url(public/fonts/Kalam/Kalam-Bold.ttf);
+        }
+        body{
+
+        }
+        #backgroundImage {
+            color: white;
+            background-image: url('public/pexels-jane-doan-1132047.jpg');
+            background-size: cover;
+            height: 100vh;
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #routerView{
+            height: 100vh;
+            background-color: rgba(0,0,0, 0.1); /* Black w/opacity/see-through */
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+            overflow: scroll;
+        }
+        #routerView h1 {
+            font-size: 150px;
+            margin-top: 200px;
+            font-family: Kalam-L !important;
+        }
+        .shadowyText{
+            text-shadow: 12px 2px #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

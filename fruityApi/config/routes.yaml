@@ -1,0 +1,22 @@
+# config/routes.yaml
+register:
+    path: /api/register
+    controller: App\Controller\RegistrationController::register
+    methods: POST
+
+api_login_check:
+    path: /api/login_check
+
+fruit_list:
+    path: /api/fruits
+    controller: App\Controller\FruitsController::listOfFruits
+
+save_favorite_fruit:
+    path: /api/save-favorite-fruit
+    controller: App\Controller\FruitsController::saveFavoriteFruit
+    methods: POST
+
+remove_favorite_fruit:
+    path: /api/remove-favorite-fruit
+    controller: App\Controller\FruitsController::removeFavoriteFruit
+    methods: POST
